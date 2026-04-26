@@ -1,0 +1,107 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+h1 {
+  color: #2c3e50;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+}
+
+/* Gallery Layout */
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Image Card */
+.image-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Styling */
+.image-card img {
+  display: block;
+  width: 400px;
+  height: 267px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* CSS Filters - Applied to all images */
+.filtered {
+  filter: 
+    contrast(1.1) 
+    brightness(0.95) 
+    saturate(1.15) 
+    sepia(0.05);
+  transition: filter 0.4s ease;
+}
+
+.filtered:hover {
+  filter: 
+    contrast(1.15) 
+    brightness(1.05) 
+    saturate(1.25) 
+    sepia(0.08);
+}
+
+/* Image Info */
+.image-info {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.license {
+  color: #34495e;
+  font-size: 0.95rem;
+  margin-bottom: 5px;
+}
+
+.license-type {
+  color: #7f8c8d;
+  font-size: 0.85rem;
+}
+
+.license-type a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.license-type a:hover {
+  text-decoration: underline;
+}
